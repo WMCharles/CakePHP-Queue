@@ -64,6 +64,7 @@ class Application extends BaseApplication
         }
 
         // Load more plugins here
+        $this->addPlugin('Cake/Queue');
     }
 
     /**
@@ -132,5 +133,6 @@ class Application extends BaseApplication
         $this->addPlugin('Migrations');
 
         // Load more plugins here
+        
     }
 }

@@ -19,20 +19,20 @@
             <h3><?= h($user->name) ?></h3>
             <table>
                 <tr>
-                    <th><?= __('Name') ?></th>
-                    <td><?= h($user->name) ?></td>
+                    <th><?= __('Username') ?></th>
+                    <td><?= h($user->username) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Email') ?></th>
                     <td><?= h($user->email) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($user->id) ?></td>
+                    <th><?= __('Is Active') ?></th>
+                    <td><?= h($user->is_active) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Is Active') ?></th>
-                    <td><?= $this->Number->format($user->is_active) ?></td>
+                    <th><?= __('Id') ?></th>
+                    <td><?= $this->Number->format($user->id) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Created') ?></th>
