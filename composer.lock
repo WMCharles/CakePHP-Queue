@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9ffc433121bc433bd73b8f908b42f7c",
+    "content-hash": "ca02f7ed0ef5c8809c845c6ed7dac5d7",
     "packages": [
         {
             "name": "brick/math",
@@ -869,70 +869,6 @@
             "time": "2023-03-23T09:50:55+00:00"
         },
         {
-            "name": "enqueue/redis",
-            "version": "0.10.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-enqueue/redis.git",
-                "reference": "7aa6f64dd7fbd106aa3695d4fbd6ef5d579a5411"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-enqueue/redis/zipball/7aa6f64dd7fbd106aa3695d4fbd6ef5d579a5411",
-                "reference": "7aa6f64dd7fbd106aa3695d4fbd6ef5d579a5411",
-                "shasum": ""
-            },
-            "require": {
-                "enqueue/dsn": "^0.10",
-                "php": "^7.4|^8.0",
-                "queue-interop/queue-interop": "^0.8",
-                "ramsey/uuid": "^3.5|^4"
-            },
-            "require-dev": {
-                "enqueue/null": "0.10.x-dev",
-                "enqueue/test": "0.10.x-dev",
-                "phpunit/phpunit": "^9.5",
-                "predis/predis": "^1.1",
-                "queue-interop/queue-spec": "^0.6.2"
-            },
-            "suggest": {
-                "ext-redis": "If you'd like to use phpredis extension."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.10.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Enqueue\\Redis\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Message Queue Redis Transport",
-            "homepage": "https://enqueue.forma-pro.com/",
-            "keywords": [
-                "messaging",
-                "queue",
-                "redis"
-            ],
-            "support": {
-                "docs": "https://github.com/php-enqueue/enqueue-dev/blob/master/docs/index.md",
-                "email": "opensource@forma-pro.com",
-                "forum": "https://gitter.im/php-enqueue/Lobby",
-                "issues": "https://github.com/php-enqueue/enqueue-dev/issues",
-                "source": "https://github.com/php-enqueue/enqueue-dev"
-            },
-            "time": "2023-05-20T05:16:02+00:00"
-        },
-        {
             "name": "enqueue/simple-client",
             "version": "0.10.19",
             "source": {
@@ -1439,75 +1375,6 @@
                 "source": "https://github.com/php-amqplib/php-amqplib/tree/master"
             },
             "time": "2018-10-23T18:48:24+00:00"
-        },
-        {
-            "name": "predis/predis",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/predis/predis.git",
-                "reference": "d4be306d0aca28b5633b96adef03b29fea569c2f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/predis/predis/zipball/d4be306d0aca28b5633b96adef03b29fea569c2f",
-                "reference": "d4be306d0aca28b5633b96adef03b29fea569c2f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "ext-curl": "Allows access to Webdis when paired with phpiredis",
-                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Predis\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniele Alessandri",
-                    "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net"
-                }
-            ],
-            "description": "Flexible and feature-complete PHP client library for Redis",
-            "homepage": "http://github.com/nrk/predis",
-            "keywords": [
-                "nosql",
-                "predis",
-                "redis"
-            ],
-            "support": {
-                "issues": "https://github.com/nrk/predis/issues",
-                "source": "https://github.com/predis/predis/tree/v1.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/tillkruss",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/tillkruss",
-                    "type": "github"
-                }
-            ],
-            "time": "2014-08-01T09:59:50+00:00"
         },
         {
             "name": "psr/container",
@@ -4345,16 +4212,16 @@
         },
         {
             "name": "josegonzalez/dotenv",
-            "version": "3.2.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/josegonzalez/php-dotenv.git",
-                "reference": "f19174d9d7213a6c20e8e5e268aa7dd042d821ca"
+                "reference": "e97dbd3db53508dcd536e73ec787a7f11458d41d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/josegonzalez/php-dotenv/zipball/f19174d9d7213a6c20e8e5e268aa7dd042d821ca",
-                "reference": "f19174d9d7213a6c20e8e5e268aa7dd042d821ca",
+                "url": "https://api.github.com/repos/josegonzalez/php-dotenv/zipball/e97dbd3db53508dcd536e73ec787a7f11458d41d",
+                "reference": "e97dbd3db53508dcd536e73ec787a7f11458d41d",
                 "shasum": ""
             },
             "require": {
@@ -4362,9 +4229,9 @@
                 "php": ">=5.5.0"
             },
             "require-dev": {
-                "php-mock/php-mock-phpunit": "^1.1",
-                "satooshi/php-coveralls": "1.*",
-                "squizlabs/php_codesniffer": "2.*"
+                "php-coveralls/php-coveralls": "~2.0",
+                "php-mock/php-mock-phpunit": "~1.1||~2.0",
+                "squizlabs/php_codesniffer": "~2.9||~3.7"
             },
             "type": "library",
             "autoload": {
@@ -4396,9 +4263,9 @@
             ],
             "support": {
                 "issues": "https://github.com/josegonzalez/php-dotenv/issues",
-                "source": "https://github.com/josegonzalez/php-dotenv/tree/master"
+                "source": "https://github.com/josegonzalez/php-dotenv/tree/4.0.0"
             },
-            "time": "2017-09-19T15:49:58+00:00"
+            "time": "2023-05-29T22:49:26+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -7051,5 +6918,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
