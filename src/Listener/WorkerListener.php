@@ -5,13 +5,16 @@ namespace App\Listener;
 use Cake\Event\Event;
 use Cake\Event\EventListenerInterface;
 use Cake\Log\LogTrait;
+use Cake\Mailer\MailerAwareTrait;
 use Cake\Utility\Text;
 use Psr\Log\LogLevel;
+use Cake\Mailer\Mailer;
 use App\Mailer\NotifyMailer;
 
 class WorkerListener implements EventListenerInterface
 {
     use LogTrait;
+    use MailerAwareTrait;
 
     public function implementedEvents(): array
     {
@@ -85,6 +88,19 @@ class WorkerListener implements EventListenerInterface
         $fullName = $cakeMessage->getArgument()['args'][1];
 
         $this->log("Success: {$fullName} <{$email}>", LogLevel::INFO);
+
+        # Send the email
+        try {
+            $mailer = new Mailer();
+            $mailer
+                ->setTo($email)
+                ->setFrom('noreply@firstadvantageconsulting.com');
+            $mailer->deliver();
+            $this->log("Email sent successfully to: {$email}", LogLevel::INFO);
+        } catch (\Exception $e) {
+            $this->log("Email sending failed to: {$email}", LogLevel::ERROR);
+            $this->log($e->getMessage(), LogLevel::ERROR);
+        }
     }
 
     public function processorMessageFailure($message)
