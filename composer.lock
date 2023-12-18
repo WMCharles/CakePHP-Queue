@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9ffc433121bc433bd73b8f908b42f7c",
+    "content-hash": "a0a8144d9f87b7aaebfea40bf76464cb",
     "packages": [
         {
             "name": "brick/math",
@@ -128,20 +128,20 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "4.4.18",
+            "version": "4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "34b4920bc8c13f8897434003e8aaaa605153d051"
+                "reference": "c0977cecf79eb2ae0ed8d89423c1014c200801c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/34b4920bc8c13f8897434003e8aaaa605153d051",
-                "reference": "34b4920bc8c13f8897434003e8aaaa605153d051",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/c0977cecf79eb2ae0ed8d89423c1014c200801c0",
+                "reference": "c0977cecf79eb2ae0ed8d89423c1014c200801c0",
                 "shasum": ""
             },
             "require": {
-                "cakephp/chronos": "^2.2",
+                "cakephp/chronos": "^2.4.0-RC2",
                 "composer/ca-bundle": "^1.2",
                 "ext-intl": "*",
                 "ext-json": "*",
@@ -149,7 +149,7 @@
                 "laminas/laminas-diactoros": "^2.2.2",
                 "laminas/laminas-httphandlerrunner": "^1.1 || ^2.0",
                 "league/container": "^4.2.0",
-                "php": ">=7.4.0",
+                "php": ">=7.4.0,<9",
                 "psr/container": "^1.1 || ^2.0",
                 "psr/http-client": "^1.0",
                 "psr/http-server-handler": "^1.0",
@@ -198,6 +198,7 @@
             "autoload": {
                 "files": [
                     "src/Core/functions.php",
+                    "src/Error/functions.php",
                     "src/Collection/functions.php",
                     "src/I18n/functions.php",
                     "src/Routing/functions.php",
@@ -236,20 +237,20 @@
                 "issues": "https://github.com/cakephp/cakephp/issues",
                 "source": "https://github.com/cakephp/cakephp"
             },
-            "time": "2023-09-22T07:53:48+00:00"
+            "time": "2023-12-15T03:05:55+00:00"
         },
         {
             "name": "cakephp/chronos",
-            "version": "2.4.1",
+            "version": "2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/chronos.git",
-                "reference": "dd583900b26971e84d56c482d6c5fc16961bd103"
+                "reference": "03208c18eb3267490662e68671bb9c22aa804492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/chronos/zipball/dd583900b26971e84d56c482d6c5fc16961bd103",
-                "reference": "dd583900b26971e84d56c482d6c5fc16961bd103",
+                "url": "https://api.github.com/repos/cakephp/chronos/zipball/03208c18eb3267490662e68671bb9c22aa804492",
+                "reference": "03208c18eb3267490662e68671bb9c22aa804492",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +295,7 @@
                 "issues": "https://github.com/cakephp/chronos/issues",
                 "source": "https://github.com/cakephp/chronos"
             },
-            "time": "2023-09-12T03:12:29+00:00"
+            "time": "2023-11-03T05:26:08+00:00"
         },
         {
             "name": "cakephp/migrations",
@@ -467,16 +468,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.3.7",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "76e46335014860eec1aa5a724799a00a2e47cc85"
+                "reference": "b66d11b7479109ab547f9405b97205640b17d385"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/76e46335014860eec1aa5a724799a00a2e47cc85",
-                "reference": "76e46335014860eec1aa5a724799a00a2e47cc85",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/b66d11b7479109ab547f9405b97205640b17d385",
+                "reference": "b66d11b7479109ab547f9405b97205640b17d385",
                 "shasum": ""
             },
             "require": {
@@ -488,7 +489,7 @@
                 "phpstan/phpstan": "^0.12.55",
                 "psr/log": "^1.0",
                 "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0 || ^6.0"
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -523,7 +524,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.3.7"
+                "source": "https://github.com/composer/ca-bundle/tree/1.4.0"
             },
             "funding": [
                 {
@@ -539,7 +540,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-30T09:31:38+00:00"
+            "time": "2023-12-18T12:05:55+00:00"
         },
         {
             "name": "enqueue/amqp-bunny",
@@ -869,70 +870,6 @@
             "time": "2023-03-23T09:50:55+00:00"
         },
         {
-            "name": "enqueue/redis",
-            "version": "0.10.19",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-enqueue/redis.git",
-                "reference": "7aa6f64dd7fbd106aa3695d4fbd6ef5d579a5411"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-enqueue/redis/zipball/7aa6f64dd7fbd106aa3695d4fbd6ef5d579a5411",
-                "reference": "7aa6f64dd7fbd106aa3695d4fbd6ef5d579a5411",
-                "shasum": ""
-            },
-            "require": {
-                "enqueue/dsn": "^0.10",
-                "php": "^7.4|^8.0",
-                "queue-interop/queue-interop": "^0.8",
-                "ramsey/uuid": "^3.5|^4"
-            },
-            "require-dev": {
-                "enqueue/null": "0.10.x-dev",
-                "enqueue/test": "0.10.x-dev",
-                "phpunit/phpunit": "^9.5",
-                "predis/predis": "^1.1",
-                "queue-interop/queue-spec": "^0.6.2"
-            },
-            "suggest": {
-                "ext-redis": "If you'd like to use phpredis extension."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.10.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Enqueue\\Redis\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Message Queue Redis Transport",
-            "homepage": "https://enqueue.forma-pro.com/",
-            "keywords": [
-                "messaging",
-                "queue",
-                "redis"
-            ],
-            "support": {
-                "docs": "https://github.com/php-enqueue/enqueue-dev/blob/master/docs/index.md",
-                "email": "opensource@forma-pro.com",
-                "forum": "https://gitter.im/php-enqueue/Lobby",
-                "issues": "https://github.com/php-enqueue/enqueue-dev/issues",
-                "source": "https://github.com/php-enqueue/enqueue-dev"
-            },
-            "time": "2023-05-20T05:16:02+00:00"
-        },
-        {
             "name": "enqueue/simple-client",
             "version": "0.10.19",
             "source": {
@@ -1066,20 +1003,20 @@
         },
         {
             "name": "laminas/laminas-diactoros",
-            "version": "2.25.2",
+            "version": "2.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "9f3f4bf5b99c9538b6f1dbcc20f6fec357914f9e"
+                "reference": "6584d44eb8e477e89d453313b858daac6183cddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/9f3f4bf5b99c9538b6f1dbcc20f6fec357914f9e",
-                "reference": "9f3f4bf5b99c9538b6f1dbcc20f6fec357914f9e",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/6584d44eb8e477e89d453313b858daac6183cddc",
+                "reference": "6584d44eb8e477e89d453313b858daac6183cddc",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.1"
             },
@@ -1159,7 +1096,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-04-17T15:44:17+00:00"
+            "time": "2023-10-29T16:17:44+00:00"
         },
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -1439,75 +1376,6 @@
                 "source": "https://github.com/php-amqplib/php-amqplib/tree/master"
             },
             "time": "2018-10-23T18:48:24+00:00"
-        },
-        {
-            "name": "predis/predis",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/predis/predis.git",
-                "reference": "d4be306d0aca28b5633b96adef03b29fea569c2f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/predis/predis/zipball/d4be306d0aca28b5633b96adef03b29fea569c2f",
-                "reference": "d4be306d0aca28b5633b96adef03b29fea569c2f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "ext-curl": "Allows access to Webdis when paired with phpiredis",
-                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Predis\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniele Alessandri",
-                    "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net"
-                }
-            ],
-            "description": "Flexible and feature-complete PHP client library for Redis",
-            "homepage": "http://github.com/nrk/predis",
-            "keywords": [
-                "nosql",
-                "predis",
-                "redis"
-            ],
-            "support": {
-                "issues": "https://github.com/nrk/predis/issues",
-                "source": "https://github.com/predis/predis/tree/v1.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/tillkruss",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/tillkruss",
-                    "type": "github"
-                }
-            ],
-            "time": "2014-08-01T09:59:50+00:00"
         },
         {
             "name": "psr/container",
